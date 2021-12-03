@@ -11,6 +11,7 @@ from collections import OrderedDict
 cgitb.enable()
 
 response_dict = OrderedDict()
+response_dict['pcie-ethernet-agent-version'] = '0.0.1'
 response_dict['hostname'] = (socket.gethostname())
 response_dict['device_count'] = 0
 response_dict['process_count'] = 0
