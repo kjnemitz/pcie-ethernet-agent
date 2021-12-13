@@ -19,6 +19,7 @@ response_dict['devices'] = []
 response_dict['processes'] = []
 try:
     nvmlInit()
+    deviceCount = nvmlDeviceGetCount()
     for i in range(0, deviceCount):
         handle = nvmlDeviceGetHandleByIndex(i)
         pciInfo = nvmlDeviceGetPciInfo(handle)
